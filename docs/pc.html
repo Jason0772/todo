@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=
+    , initial-scale=1.0"
+        />
+        <title>Document</title>
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                background: #999;
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+            }
+            #fs {
+                display: block;
+                margin: auto;
+                height: 100vh;
+                overflow: hidden;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <iframe id="fs" src="./index.html"></iframe>
+        <script>
+            let fs = document.getElementById("fs");
+            let w = Math.min(window.innerWidth, 540);
+            fs.setAttribute("width", w);
+        </script>
+    </body>
+</html>

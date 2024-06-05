@@ -5,8 +5,19 @@
         <link rel="icon" href="./favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Vite App</title>
-      <script type="module" crossorigin src="./assets/index-35b9e7b7.js"></script>
-      <link rel="stylesheet" href="./assets/index-18ff2994.css">
+        <script>
+            function isMobile() {
+                let flag = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                    navigator.userAgent
+                );
+                return flag;
+            }
+            if (!isMobile() && window.self == window.top) {
+                location.href = "./pc.html";
+            }
+        </script>
+      <script type="module" crossorigin src="./assets/index-31531190.js"></script>
+      <link rel="stylesheet" href="./assets/index-56feb41a.css">
     </head>
     <body>
         <div id="app"></div>
