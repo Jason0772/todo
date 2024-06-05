@@ -13,6 +13,9 @@ export default defineConfig({
         },
     },
     base: "./",
+    build: {
+        outDir: "docs", // 设置打包输出目录为 "docs"
+    },
     server: {
         port: 4500, // 设置服务启动端口号
         open: true, // 设置服务启动时是否自动打开浏览器
